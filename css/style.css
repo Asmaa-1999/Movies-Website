@@ -1,0 +1,106 @@
+body {
+    background-color: #000;
+}
+.mainItem
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    z-index: 9999;
+   
+}
+.text-width
+{
+    width: 220px;
+}
+
+
+/*********** search ***********/
+
+.btnItem
+{
+    background-color: transparent;
+    padding-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+
+}
+/*********form************/
+.requiredItem{
+    
+    border: solid #f8d7da;
+    border-radius: 0.22rem;
+    background-color: #f8d7da;
+}
+.requiredItem  p {
+    color: #721c24;
+}
+.btnSubmit
+{
+    border: #dc3545 0.025rem solid;
+    color: #dc3545 ;
+    background-color: transparent!important;
+}
+.btnSubmit:hover
+{
+   
+    color: #dc3545 ;
+}
+
+/************slidebar*********/
+.slideBar {
+    background-color: #000;
+    display: none;
+}
+
+
+.sliderBerLinks a {
+    color: white;
+}
+
+
+
+.slideSocial a i {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.slideSocial a i:hover {
+    color: brown;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+}
+.sliderBarContent p{
+font-size: 0.9rem;
+}
+
+
+/*******secion-movies*********/
+.moviseInf
+{
+    background-color: rgba(213, 205, 205, 0.7);
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%; 
+    transition: top 1s ;
+}
+.moviseImg:hover .moviseInf
+{
+    top:0%;
+}
+.moviseImg
+{
+    overflow: hidden;
+}
+

@@ -1,0 +1,184 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>movies</title>
+</head>
+
+<body>
+
+    <section class="mainItem d-flex ">
+        <div class="slideBar ">
+            <div class="ps-4 pt-2 h-100 d-flex flex-column justify-content-between">
+                <ul class="list-unstyled sliderBerLinks">
+                    <li class="categoryLink py-3"><a href="" id="now_playing">Now playing</a></li>
+                    <li class="categoryLink py-3"> <a href="" id="popular">Popular</a></li>
+                    <li class="categoryLink py-3"> <a href="" id="top_rated">Top Rated</a></li>
+                    <li  id="trending" class="categoryLink py-3"> <a href="https://api.themoviedb.org/3/trending/all/week?api_key=942ff127cf531cf1efa75cb7d74bcfd9" id="motrending">Trending</a></li>
+                    <li class="categoryLink py-3"> <a href="" id="upcoming">Upcoming</a></li>
+                    <li class="categoryLink py-3"> <a href="#form">Contact Us</a></li>
+                </ul>
+
+                <div class="slideSocial ">
+                    <div>
+                        <a href="#" class="pe-2"><i class="fa-brands fa-facebook "></i></a>
+                        <a href="#" class="pe-2"><i class="fa-brands fa-twitter "></i></a>
+                        <a href="#" class="pe-2"><i class="fa-solid fa-globe "></i></a>
+                    </div>
+
+                    <p class="text-white py-3 text-width"> Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-light bg-light">
+            <div class=" navItem h-100 d-flex flex-column justify-content-between align-items-center ">
+
+                <div class="navbar-brand text-center">
+                    <img src="images/logo.png" class="w-50" alt="logoWeb">
+                </div>
+
+                <button class="navbar-toggler btnList  " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa  fa-bars"></i>
+                    <!-- <i class="fa-times  "></i>-->
+
+
+                </button>
+
+                <div class="slideSocial  d-flex flex-column">
+                    <a href="#"><i class="fa-solid fa-globe p-2 text-black "></i></a>
+                    <a href="#"> <i class="fa-solid fa-share-nodes p-2 text-black"></i></a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="coinputsearch">
+        <div class=" container p-4 w-75">
+            <div class="row">
+                <div class="col-6"> <input class=" btnItem form-control text-center " type="text" id="search1"
+                        placeholder=" get movies by word..">
+                </div>
+                <div class="col-6"> <input class="form-control text-center btnItem" type="text" id="search2"
+                        placeholder="search.. ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contentMovise">
+        <div class="container w-75 p-3 ">
+            <div class="row g-lg-4" id="rowdate">
+
+                <!--   <div class=" col-lg-4">
+
+                    <div class="moviseImg position-relative">
+                        <img src="https://image.tmdb.org/t/p/w500/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg"
+                            class=" w-100 bg-info ">
+                        <div class="moviseInf text-center p-5">
+
+                            <h3>Doctor Strange in the Multiverse of Madness</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nesciunt natus
+                                pariatur
+                                tempora. Autem molestiae soluta et perspiciatis. Laudantium dolor odit perspiciatis
+                                maiores
+                                placeat ipsum temporibus impedit repellendus earum alias!</p>
+                            <h6>rate: 7.6</h6>
+                            <h6>1/2/1999</h6>
+                        </div>
+
+                    </div>
+                </div>-->
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="form">
+        <div class=" container p-4 w-75">
+            <div class="row">
+                <div class="col-12">
+                    <h3>ContacUs...</3>
+                </div>
+
+                <div class="col-6 p-1"> <input class="form-control  btnItem" type="text" value=""
+                        oninput="validationName()" id="userName" placeholder="Enter Your Name">
+                    <div id="worngName"></div>
+                    <!--<div class="requiredItem">
+                        <p class="worng  p-1 ">Your Name is not valid</p>
+                    </div>-->
+                </div>
+
+                <div class="col-6 p-1"> <input class="form-control   btnItem" type="email" value="" id="userEmail"
+                        oninput="validationEmail()" placeholder="Enter Email">
+                    <div id="worngemail"></div>
+                    <!--
+                     <div class="requiredItem">
+                        <p class="worng  p-1 ">entre valid email</p>
+                    </div>
+                  -->
+                </div>
+
+                <div class="col-6 p-1"> <input class="form-control btnItem " oninput="validationphone()" type="text"
+                        value="" id="userPhone" placeholder="Enter phone">
+                    <div id="worngPhone"></div>
+                    <!--
+                    <div class="requiredItem">
+                        <p class="worng  p-1 ">entre valid phone</p>
+                    </div>
+                   -->
+                </div>
+
+                <div class="col-6 p-1"> <input class="form-control   btnItem " oninput="validationAge()" type="text"
+                        value="" id="userAge" placeholder="Enter Age">
+                    <div id="worngAge"></div>
+
+                    <!--- <div class="requiredItem">
+                        <p class="worng p-1"> entre valid Age</p>
+                    </div>-->
+                </div>
+
+                <div class="col-6 p-1"> <input class=" form-control   btnItem" oninput="validationPassword()"
+                        type="password" value="" id="userPassword" placeholder="Enter password">
+                    <div id="worngPassword"></div>
+                    <!-- <div class="requiredItem">
+                        <p class="worng p-1">entre valid password *Minimum eight characters, at least one letter and one
+                            number:*</p>
+                    </div>-->
+
+                </div>
+                <div class="col-6 p-1"> <input class="form-control  btnItem" oninput="validationRepassword()"
+                        type="password" value="" id="userRepassword" placeholder="Enter password">
+                    <div id="worngRepassword"></div>
+                    <!--<div class="requiredItem">
+                        <p class="worng p-1">entre valid Repassword</p>
+                    </div>--->
+                </div>
+                <div class="col-6 p-2">
+                    <button class="btn  btnSubmit " id="btnSubmit" type="submit">submit</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
